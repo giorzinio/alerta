@@ -1,0 +1,24 @@
+<ion-content padding>
+  <div class="img-custom">
+    <img src="assets/imgs/UTK-LOGO.png" />
+    <h1>ALERTA MUNI</h1>
+  </div> 
+  <ion-list class="form">
+    <ion-item>        
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input [(ngModel)] = "usercreds.codigo"></ion-input>
+    </ion-item>  
+    <ion-item>        
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input [(ngModel)] = "usercreds.clave" type="password"></ion-input>
+      </ion-item>        
+  </ion-list>  
+  <br/>
+  <ion-button expand="block" color="dark" (click)="ingresar()">INICIAR SESIÓN</ion-button>
+  <br>
+  <div class="text-center">
+    <a>¿Olvidaste tu Contraseña?</a>
+    <p>-o-</p>
+  </div>
+  <ion-button expand="block" color="success" (click)="ingresar()">CREAR NUEVA CUENTA</ion-button>
+</ion-content>
